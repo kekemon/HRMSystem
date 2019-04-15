@@ -12,12 +12,10 @@
       <property name = "hibernate.connection.url">jdbc:mysql://localhost/database</property>
       <property name = "hibernate.connection.username">root</property>      
       <property name = "hibernate.connection.password">1234</property>
-      
+      <!-- <property name="hbm2ddl.auto">create</property> -->
       <mapping class="com.kekemon.hrm.model.Employee"/>
       <mapping class="com.kekemon.hrm.model.PersonalData"/>
       <mapping class="com.kekemon.hrm.model.Credential"/>
       
-      
-      <!-- <property name="hbm2ddl.auto">create</property> -->
    </session-factory>
 </hibernate-configuration>

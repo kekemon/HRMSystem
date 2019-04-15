@@ -23,7 +23,7 @@ public class EmployeeUtils {
 		Transaction tx = null;
 		try {
 			tx = session.beginTransaction();
-			List<Employee> employees = session.createQuery("FROM Employee").list(); 
+			List<Employee> employees = session.createCriteria(Employee.class).list(); 
 			for (Iterator<Employee> iterator = employees.iterator(); iterator.hasNext();){
 				Employee employee = (Employee) iterator.next(); 
 				Credential ceCredential = employee.getCredential();
